@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+body {
+    background: rgba(128, 128, 128, 0.247);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(./img/img-1.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #e8ecf1;
+    z-index: 100;
+    margin-bottom: 30px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.header-logo {
+    padding: 15px;
+}
+
+.header-img {
+    width: 120px;
+
+}
+
+.hero {
+    padding: 25px 15px;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.hero-title {
+    max-width: 100%;
+    font-family: Source Sans Pro, sans-serif;
+    line-height: 1.2;
+    color: #fff;
+    font-size: calc(35 * (100vw / 1170) + 8px);
+    text-align: center;
+}
+
+.hero-btn {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #3ec1d3;
+    border: 1px solid #3ec1d3;
+    color: #e8ecf1;
+    text-transform: uppercase;
+    border-radius: 15px;
+    padding: 15px 30px;
+    margin-top: 30px;
+    cursor: pointer;
+
+}
+
+.hero-btn:hover {
+    color: #e6e8ed;
+    background-color: #21cbe1;
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        background-color: transparent;
+    }
+
+    .header-container {
+        justify-content: start;
+    }
+
+    .header-img {
+        width: 220px;
+    }
+
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+    }
+
+    .hero-title {
+        max-width: 50%;
+        font-size: 38px;
+    }
+
+    .hero-btn {
+        margin-top: 100px;
+        font-size: 20px;
+    }
+}
